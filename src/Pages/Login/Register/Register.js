@@ -5,6 +5,7 @@ import {
   useUpdateProfile,
 } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import auth from "../../../firebase.init";
 import Loading from "../../Shared/Loading/Loading";
 import SocialLogin from "../SocialLogin/SocialLogin";
@@ -31,7 +32,7 @@ const Register = () => {
   let from = location.state?.from?.pathname || "/";
   if (user) {
     navigate(from, { replace: true });
-    console.log(user);
+    // console.log(user);
   }
 
   if (loading || updating) {
@@ -45,9 +46,9 @@ const Register = () => {
     const password = event.target.password.value;
     await createUserWithEmailAndPassword(email, password);
     await updateProfile({ displayName: name });
-    alert("Updated profile");
+    toast("Updated profile");
     console.log("Update profile");
-    navigate("/home");
+    navigate(from, { replace: true });
   };
 
   return (
