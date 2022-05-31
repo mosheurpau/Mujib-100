@@ -14,7 +14,7 @@ const Banner = () => {
         <img
           style={{ height: "80vh" }}
           className="d-block w-100 img-fluid"
-          src="https://i.ibb.co/fSJBd5X/mujib-2-1.jpg"
+          src="https://i.ibb.co/qCWpbkC/mujib-banner7-1.jpg"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -22,11 +22,12 @@ const Banner = () => {
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
+
       <Carousel.Item>
         <img
           style={{ height: "80vh" }}
           className="d-block w-100 img-fluid"
-          src="https://i.ibb.co/k0MGLvj/mujib-5.jpg"
+          src="https://i.ibb.co/fSJBd5X/mujib-2-1.jpg"
           alt="Second slide"
         />
 
@@ -35,6 +36,7 @@ const Banner = () => {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
+
       <Carousel.Item>
         <img
           style={{ height: "80vh" }}
